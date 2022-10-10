@@ -31,7 +31,7 @@ local function main()
     -- avoid memory leak
     collectgarbage("setpause", 100)
     collectgarbage("setstepmul", 5000)
-    require("Start.GameMain").start()
+    -- require("Start.GameMain").start()
 end
 
 xpcall(main, __G__TRACKBACK__)
