@@ -1,0 +1,40 @@
+------------- GameVersionConfig
+
+local M = {
+	-- 游戏版本
+	CLIENT_VERSION = {1},
+
+	-- 游戏资源版本
+	GAME_RESOURCES_VERION = {2},
+
+	-- uid登录
+	SHOW_UID_LOGIN_BTN = false,
+	UID_LOGIN_FRONTWINDOW = "5e3b4530b293b5c1f4eeca4638ab4dc1",
+
+	-- 开发入口服务器   
+	SERVER_LIST_URL_NET = {3},
+	SERVER_LIST_URL_CN = {4},
+	
+	LUA_ROOT_PATH = "";
+	Debug = {5},
+	LUA_RELOAD_DEBUG = {6},
+	SERVICE_URL = nil, -- 需要用户选服时设置
+	IS_SERVER = false;
+	SERVER_CHAT_URL = {7},
+	SERVER_CHAT_PORT = {8},
+	IS_TENCENT_TEST = {9},
+	OPEN_SELECT_SERVER = {10},
+	OPEN_SR_DEBUG = {11},
+	PORTAL_SERVER_ADDRESS_NET = {12},
+	PORTAL_SERVER_ADDRESS_CN = {13},
+	DOWN_LATER_ZIP = {14},
+	PAY_TEST = {15},
+	vcd=1,
+}
+
+-- 入口地址
+--M.MASTER_URL = M.SERVER_LIST_URL_NET
+M.PORTAL_SERVER_ADDRESS_URL = M.PORTAL_SERVER_ADDRESS_NET
+
+return M
+
